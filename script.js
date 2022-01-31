@@ -1,46 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Raja To Do List</title>
-</head>
-<body>
-
-<form name="todoForm">
-  <table>
-    <tbody>
-    <tr>
-      <td><label for="todo">Todo:</label></td>
-      <td><input type="text" id="todo" name="todo"></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><input type="submit" value="Add"/></td>
-    </tr>
-    </tbody>
-  </table>
-</form>
-
-<h1>Raja To Do List</h1>
-
-<table>
-  <thead>
-  <tr>
-    <th>Filter by:</th>
-    <th><input type="text" name="filter" id="filter"></th>
-  </tr>
-  </thead>
-  <tbody id="todolistBody">
-  <tr>
-    <td><input type="button" value="Done"></td>
-    <td></td>
-  </tr>
-  </tbody>
-</table>
-
-<script>
-
-  const todolist = [];
+const todolist = [];
 
   function clearTodolist(){
     const todolistBody = document.getElementById("todolistBody");
@@ -111,7 +69,3 @@
 
   displayTodolist();
 
-</script>
-
-</body>
-</html>
